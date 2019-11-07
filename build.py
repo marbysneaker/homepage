@@ -11,3 +11,4 @@ open("docs/index.html","w").write(new_index)
 new_projects = top + projects + bottom
 open("docs/projects.html","w").write(new_projects)
 
+# create git pull request
