@@ -192,7 +192,7 @@ p {
   height: 250px;
 }
 
-#home-info li{
+.bg-dark li{
   list-style: none;
   text-align: center;
   float: left;
@@ -208,6 +208,7 @@ p {
   font-size: 25pt;
   overflow: hidden;
 }
+.list
 
 
 
