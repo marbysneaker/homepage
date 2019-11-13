@@ -19,14 +19,6 @@ def add_content():
         new_content.append(final_projects)
     return new_content
 
-#writing the new file
-def main():
-    finals = add_title()
-    for i in range(0,3):
-        open(pages[i]['output'],"w+").write(finals[i])
-
-    
-            
 
 #changing title
 def add_title():
@@ -36,12 +28,25 @@ def add_title():
     for i in range(0,3):
         title_added = new_pages[i].replace("{{title}}",titles[i])
         final.append(title_added)
-        
     return final
+
+#writing the new file
+def main(final):
+    x = 0
+    for i in final:
+        open(pages[x]['output'],"w+").write(i)
+        x += 1
+
+    
+            
+
+    
 
         
 if __name__ == "__main__":
     add_content()
     add_title()
-    main()
+    final = add_title()
+    main(final)
+   
 
