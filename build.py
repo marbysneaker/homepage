@@ -36,7 +36,7 @@ def main(final):
     for i in final:
         open(pages[x]['output'],"w+").write(i)
         x += 1
-    print(len(final))
+    
 
     
             
