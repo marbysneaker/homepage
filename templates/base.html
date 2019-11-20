@@ -11,7 +11,42 @@
   <title>{{title}}</title>
 </head>
 <body>
+    <header>
+      <nav id="navbar">
+        <div class="container">
+          <h1 class="logo"><a href="index.html">Home</a></h1>
+          <ul>
+            {% for page in pages %}
+              {% if page.title == title %}
+              <li><a contents ="current" href= {{page.filename}}>{{page.title}}</a></li>
+              {% else %}
+              <li><a href= "{{page.filename}}">{{page.title}}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </nav>
+  
+      <div id="profile">
+        <div class="container">
+          <div class="profile-content"> 
+            <h1><img class="my-img" src="img/profile_pic.jpg" > <br> Marcelino<span class="text-primary"> Pangilinan</span></h1>
+            <p class="lead">"Choose a job you love and you will never work a day in your life".</p>
+            <div>
+              <ul>
+                {% for logo in icons %}
+                <li><a href="{{logo.icon}}"><i class="{{logo.logo}}"></i></a></li>
+                {% endfor %}
+              </ul>
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+    </header>
+  
 {{content}}
 </body>
 </html>
-<!-- testing55555!!! -->
+<!-- testing99999!!! -->
