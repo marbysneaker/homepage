@@ -4,6 +4,7 @@ from jinja2 import Template
 
 all_html_files = glob.glob("contents/*.html")
 pages =[]
+new_content =[{"page":"contents/new_content_page.html","content":"<h1> New Content! </h>\n<p>New content....</p>"}]
 
 icons =[{"icon":"http://www.twitter.com","logo":"fa fa-twitter-square"},{"icon":"http://www.facebook.com","logo":"fa fa-facebook-square"},{"icon":"http://www.overstackflow.com","logo":"fa fa-stack-overflow icon-large"},{"icon":"http://www.linkedin.com","logo":"fa fa-linkedin-square icon-large"}]
 
