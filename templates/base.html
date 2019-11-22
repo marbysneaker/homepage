@@ -18,7 +18,7 @@
           <ul>
             {% for page in pages %}
               {% if page.title == title %}
-              <li><a contents ="current" href= "{{page.title}}.html">{{page.title}}</a></li>
+              <li><a class ="current" href= "{{page.title}}.html">{{page.title}}</a></li>
               {% else %}
               <li><a href= "{{page.title}}.html">{{page.title}}</a></li>
               {% endif %}
